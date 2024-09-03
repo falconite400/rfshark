@@ -58,11 +58,11 @@ void write_reg(CC1101 *cc1101, uint8_t reg_addr, uint8_t **data, bool burst) {
     // write CS low
     gpio_put(cc1101->cs_pin, 0);
 
-    /* Set the header byte. First bit is R/W (1/0), second is burst access
-    (used to access consecutive registers more efficiently), next six are
-    address bits
-    */
-
+    // Set the header byte. First bit is R/W (1/0), second is burst access
+    // (used to access consecutive registers more efficiently), next six are
+    // address bits
+    
+    //test
     // ensure that the first two bits of reg_addr are 0, while doing nothing
     // to the six address bits
     reg_addr &= 0b00111111;
