@@ -46,6 +46,7 @@ int main() {
             printf("\n");
             //printf("part num is %x\n", data[i]);
         }
+        printf("Size of int is %zu\n", sizeof(int));
         /*
         cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
         sleep_ms(1000);
